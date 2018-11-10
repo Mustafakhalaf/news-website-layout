@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#logo{
+    width: 100px;
+    height: 100px;
+}
+#container{
+    width: 80%;
+    margin: auto;
+    background-color: white;
+}
+#container header > img {
+    margin-top: 50px ;
+    margin-bottom:50px ;
+  }
+#content{
+    display: flex;
+}
+#content #recent_links{
+    flex-grow: 2;
+    background-color: white;  
+}
+
+#content #recent_links #recentTitle{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: capitalize;
+    font-size: 24;
+    color: gray;
+}
+
+
+/**=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+#content #most_viewed{
+    flex-grow: 1;
+    flex-basis: 600px;/*minnmum width*/
+    background-color: white; 
+}
+#content #most_viewed #mvcontent #mvTitle{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: capitalize;
+    font-size: 24;
+    color: gray;
+}
+#content #most_viewed #mvcontent #mv{
+    position: relative;
+    margin-bottom: 20px;
+}
+#content #most_viewed #mvcontent #mv #sp1{
+    background: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    width: 300px;
+    height: 300px;
+    opacity: 0.7;
+    color: white;
+}
+#content #most_viewed #mvcontent #mv #sp1 time{
+    position: absolute;
+    top:5px;
+    left:20px;
+    color: white;
+}
+#content #most_viewed #mvcontent #mv #sp1 #sp2{
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+    color: white;
+}
+
+#content #most_viewed #mvcontent #mv #sp1 #sp2 h3 {
+  font-family: 'Playfair Display', serif;
+  text-transform: capitalize;
+  color: white;
+}
+#content #most_viewed #mvcontent #mv #sp1 #sp2 p {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/**=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+#content #recent_links article{
+display: flex;
+}
+
+article {
+  margin: 0px 0px 20px 0px;
+}
+
+article div:nth-child(2) {
+  padding: 0px 0px 0px 10px;
+  position: relative;
+}
+article h3 {
+  font-family: 'Playfair Display', serif;
+  text-transform: capitalize;
+}
+
+article p {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+article time {
+  color:#399DF2;
+  font-family: 'Source Sans Pro', sans-serif;
+  position: absolute;
+  bottom: 0px;
+  left: 10px;
+}
